@@ -10,22 +10,19 @@ $(function () {
     } else if (height >= 2001 && height <= 2700) {
       $(".line dt").removeClass("animate__animated animate__rotateInDownLeft");
       $(".line dt").addClass("animate__animated animate__rotateInDownLeft");
-    } else if (height >= 2701 && height <= 3030) {
+    } else if (height >= 2701 && height <= 3330) {
       $(".boxResponsive dt").removeClass(
         "animate__animated animate__rotateInDownRight"
       );
       $(".boxResponsive dt").addClass(
         "animate__animated animate__rotateInDownRight"
       );
-    } else if (height >= 3031 && height <= 3990) {
+    } else if (height >= 3331 && height <= 4080) {
       $(".hansol dt").removeClass("animate__animated animate__fadeInLeft");
       $(".hansol dt").addClass("animate__animated animate__fadeInLeft");
-    } else if (height >= 3991 && height <= 5250) {
+    } else if (height >= 4081 && height <= 4750) {
       $(".OnD dt").removeClass("animate__animated animate__fadeInUpBig");
       $(".OnD dt").addClass("animate__animated animate__fadeInUpBig");
     }
   });
-   $(".OnD dd").animate({ marginLeft: "0" }, 400, function () {
-     $(".OnD dd>.stie_btn").animate({ opacity: "1" }, 400);
-   });
 });
