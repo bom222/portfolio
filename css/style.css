@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+
+/* 
+주조색 3987f7
+보조색 235657(녹) 23569c(남) c7ebff(하)
+*/
+
+*{margin: 0; padding: 0;}
+ul, li{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.blind{position: absolute; top: 0; left: 0; width: 0; height: 0; overflow: hidden; text-indent: -99999999px; font-size: 0;}
+
+/* 폰트 연결 */
+body{font: normal 15 'RalewayL'; color: #444;}
+@font-face {font-family: 'RalewayL'; src: url(../font/Raleway-Light.ttf);}
+@font-face {font-family: 'RalewayT'; src: url(../font/Raleway-Thin.ttf);}
+@font-face{font-family: 'SpoqaB'; src:url(../font/SpoqaHanSansBold.ttf);}
+@font-face{font-family: 'SpoqaL'; src:url(../font/SpoqaHanSansLight.ttf), url(../font/NanumSquare_acR.ttf), url(../font/SpoqaHanSansLight.woff);}
+@font-face{font-family: 'SpoqaR'; src:url(../font/SpoqaHanSansRegular.ttf), url(../font/SanumSquare_acR.ttf), url(../font/SpoqaHanSansRegular.woff);}
+body{font: normal 15px 'RalewayL'; color: #444;}
+
+
+/* 정렬 */
+.fl{float: left;}
+.fr{float: right;}
+#wrap{width: 100%;}
+
+/* header ==================================================== */
+#wrap header{width: 100%; position: fixed; border-bottom: 1px solid #e6e6e6; background: #fff; z-index: 999999999999;}
+#wrap header .header_main{width: 1400px; height: 70px; margin: 0 auto;position: relative;}
+#wrap header .header_main h1.logo{margin-top: 23px; font-size: 23px; letter-spacing: 4px; padding-left: 70px;}
+#wrap header .header_main h1.logo .logoImg{width: 35px; height: 35px; position: absolute; left: 20px; top: 50%; transform: translateY(-50%); border-radius: 50%; background: url("../images/logo.svg") no-repeat; background-size: 35px;}
+#wrap header .header_main h1.logo a{color: #444;}
+#wrap header .header_main h1.logo span{color: #23569c;}
+#wrap header .header_main h1.logo span.pf{font-size: 13px; position: relative; top: -3px;}
+
+/* menu */
+ul.nav li{padding: 25px 35px; color: #444; font-size: 15px; font-weight: bold; cursor: pointer;}
+ul.nav li.on{color: #23569c; font-weight: bold;}
+ul.nav li.on2{border-bottom: 3px solid #23569c;}
+
+/* profile */
+section#profile{width: 100%; padding-top: 100px;}
+section#profile .profile_main{width: 1300px; margin: 0 auto; padding: 70px 0; overflow: hidden;}
+/* left */
+section#profile .profile_main .p_left{width: 500px; padding: 30px 0 0 30px;}
+section#profile .profile_main .p_left .img{width: 400px; height: 400px; background-repeat: 50%; overflow: hidden; background: #23569c; position: relative; border: 0;border-radius: 50%;}
+section#profile .profile_main .p_left .img::after{content: ''; display: block; width: 400px; height: 400px;  background: url("../images/me.png") no-repeat 50px 0px; background-size: 300px; position: absolute; bottom: -10px; left: 0;}
+
+/* right */
+section#profile .profile_main .p_right{width: 750px;}
+section#profile .profile_main .p_right dl{padding-top: 70px; padding-left: 0px;}
+section#profile .profile_main .p_right dl span{color: #23569c; font-weight: bold;}
+section#profile .profile_main .p_right dl dt{font-size: 30px; margin-bottom: 30px;}
+section#profile .profile_main .p_right dl dt span{font-size: 40px; background: linear-gradient(to left, #3987f7, #235657); -webkit-background-clip: text; -webkit-text-fill-color:transparent;}
+section#profile .profile_main .p_right dl dd{margin-top: 50px; font-size: 18px; line-height: 1.7;}
+
+
+/* skills ==================================================== */
+section#skill{width: 100%; padding-bottom: 60px;}
+section#skill .skill_main{width: 1400px; overflow: hidden; margin: 0 auto; padding: 60px 0;}
+section#skill .skill_main .box{width: 20%; height: 280px; position: relative; margin-top: 100px;}
+section#skill .skill_main .box>i{color: #fff; background: #23569c; border-radius: 50%; width: 30px; height: 30px; margin-left:110px; padding: 10px;}
+section#skill .skill_main .box dl{text-align: center;}
+section#skill .skill_main .box dl dt{font-size: 20px; margin: 20px 0; width: 100%; font-weight: bold;}
+section#skill .skill_main .box dl dd{position: relative; font-size: 14px; line-height: 1.7; text-align: left; letter-spacing: -1px; padding: 0;}
+section#skill .skill_main .box.about dl dd{text-align: center;}
+section#skill .skill_main .box.contacts dl dd{padding-left: 50px; margin-left: 55px;}
+section#skill .skill_main .box.licenses dl dd{text-align: center; margin-left: 30px;}
+section#skill .skill_main .box.licenses dl dd span{font-size: 13px; color: #ddd;}
+section#skill .skill_main .box.licenses dl dd strong{font-size: 13px;}
+section#skill .skill_main .box.tools dl dd{text-align: center;}
+section#skill .skill_main .box.skills dl dd{text-align: center;}
+
+/* icon */
+section#skill .skill_main .box.contacts dl dd i{font-size: 16px; position: absolute; left: 30px; color: #a7a7a7; padding-top: 4px;}
+
+
+
+/* 전체타이틀 ==================================================== */
+section h2{font-size: 17px; margin: 0 auto; border-bottom: 1px solid #999; width: 90px; padding-bottom: 20px; text-align: center; font-family: "SpoqaR";}
+section h3{font-size: 35px; text-align: center; margin: 30px 0; letter-spacing: 2px; font-weight: 100;}
+
+
+/* portfoilo ==================================================== */
+section#portfolio {min-width: 1400px; width: 100%; position: relative; background: url("../images/pf_bg.jpg"); background-size: cover; padding-top: 70px;}
+section#portfolio .portfolio_main{ width: 1400px; margin: 0 auto; padding: 30px 0;}
+section#portfolio .portfolio_main dl dt{width: 700px; height: 620px;}
+section#portfolio .portfolio_main dl:nth-child(6):after {content: ""; display: block; clear: both;}
+
+/* pf-1 */
+section#portfolio .portfolio_main .hanwha{position: relative;}
+section#portfolio .portfolio_main .hanwha dt{background: url("../images/pf1.png") no-repeat; background-size: 110%;}
+section#portfolio .portfolio_main .hanwha dd{position: absolute; top: 100px; right: 100px; width: 450px;}
+section#portfolio .portfolio_main .hanwha dd h4{font-size: 15px; margin-bottom: 10px;}
+section#portfolio .portfolio_main .hanwha dd h5{font-size: 50px; font-weight: 100;}
+section#portfolio .portfolio_main .hanwha dd p{font-size: 15px; line-height: 1.7;}
+section#portfolio .portfolio_main .hanwha dd p.site_btn a{display: block; width: 100px; padding: 10px 30px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+section#portfolio .portfolio_main .hanwha dd p.site_btn a:hover{border: 1px solid #3987f7; color: #fff; background: #3987f7; border-radius: 10px;}
+
+/* pf-2 */
+section#portfolio .portfolio_main .H_Point{position: relative;}
+section#portfolio .portfolio_main .H_Point dt{background: url("../images/pf2.png") no-repeat; background-size: 100%; float: right;}
+section#portfolio .portfolio_main .H_Point dd{position: absolute; top: 100px; left: 100px; width: 450px; margin: 50px 0 0 50px; text-align: right;}
+section#portfolio .portfolio_main .H_Point dd h4{font-size: 15px; margin-bottom: 10px;}
+section#portfolio .portfolio_main .H_Point dd h5{font-size: 50px;  margin-bottom: 10px; font-weight: 100;}
+section#portfolio .portfolio_main .H_Point dd p{font-size: 15px; line-height: 1.7;}
+section#portfolio .portfolio_main .H_Point dd p.site_btn a{display: block; width: 100px; padding: 10px 30px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444; float: right;}
+section#portfolio .portfolio_main .H_Point dd p.site_btn a:hover{border: 1px solid #3987f7; color: #fff; background: #3987f7; border-radius: 10px;}
+
+/* pf-3 */
+section#portfolio .portfolio_main .line{position: relative; clear: both;}
+section#portfolio .portfolio_main .line dt{background: url("../images/pf3.png") no-repeat -60px 90px; background-size: 120%;}
+section#portfolio .portfolio_main .line dd{position: absolute; top: 100px; right: 100px; width: 450px; margin: 50px 0 0 50px;}
+section#portfolio .portfolio_main .line dd h4{font-size: 15px; margin-bottom: 10px;}
+section#portfolio .portfolio_main .line dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+section#portfolio .portfolio_main .line dd p{font-size: 15px; line-height: 1.7;}
+section#portfolio .portfolio_main .line dd p.site_btn a{display: block; width: 100px; padding: 10px 30px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+section#portfolio .portfolio_main .line dd p.site_btn a:hover{border: 1px solid #3987f7; color: #fff; background: #3987f7; border-radius: 10px;}
+
+/* pf-4 */
+section#portfolio .portfolio_main .boxResponsive{position: relative;}
+section#portfolio .portfolio_main .boxResponsive dt{background: url("../images/pf4.png") no-repeat 0 27px; background-size: 100%;float: right;}
+section#portfolio .portfolio_main .boxResponsive dd{position: absolute; top: 100px; left: 100px; width: 450px; margin: 50px 0 0 50px; text-align: right}
+section#portfolio .portfolio_main .boxResponsive dd h4{font-size: 15px; margin-bottom: 10px;}
+section#portfolio .portfolio_main .boxResponsive dd h5{font-size: 50px; font-weight: 100;}
+section#portfolio .portfolio_main .boxResponsive dd p{font-size: 15px; line-height: 1.7;}
+section#portfolio .portfolio_main .boxResponsive dd p.site_btn a{display: block; width: 100px; padding: 10px 30px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444; float: right;}
+section#portfolio .portfolio_main .boxResponsive dd p.site_btn a:hover{border: 1px solid #3987f7; color: #fff; background: #3987f7; border-radius: 10px;}
+
+/* pf-5 */
+section#portfolio .portfolio_main .hansol{position: relative; clear: both;}
+section#portfolio .portfolio_main .hansol dt{background: url("../images/pf5.png") no-repeat -30px 0; background-size: 125%;}
+section#portfolio .portfolio_main .hansol dd{position: absolute; top: 100px; right: 100px; width: 450px;}
+section#portfolio .portfolio_main .hansol dd h4{font-size: 15px; margin-bottom: 10px;}
+section#portfolio .portfolio_main .hansol dd h5{font-size: 50px; font-weight: 100;}
+section#portfolio .portfolio_main .hansol dd p{font-size: 15px; line-height: 1.7;}
+section#portfolio .portfolio_main .hansol dd p.site_btn a{display: block; width: 100px; padding: 10px 30px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+section#portfolio .portfolio_main .hansol dd p.site_btn a:hover{border: 1px solid #3987f7; color: #fff; background: #3987f7; border-radius: 10px;}
+
+/* pf-6 */
+section#portfolio .portfolio_main .OnD{position: relative;}
+section#portfolio .portfolio_main .OnD dt{background: url("../images/pf6.png") no-repeat 0 80px; background-size: 100%; float: right;}
+section#portfolio .portfolio_main .OnD dd{position: absolute; top: 100px; left: 100px; width: 450px; margin: 50px 0 0 50px; text-align: right}
+section#portfolio .portfolio_main .OnD dd h4{font-size: 15px; margin-bottom: 10px;}
+section#portfolio .portfolio_main .OnD dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+section#portfolio .portfolio_main .OnD dd p{font-size: 15px; line-height: 1.7;}
+section#portfolio .portfolio_main .OnD dd p.site_btn a{display: block; width: 100px; padding: 10px 30px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444; float: right;}
+section#portfolio .portfolio_main .OnD dd p.site_btn a:hover{border: 1px solid #3987f7; color: #fff; background: #3987f7; border-radius: 10px;}
+
+
+/* etc ==================================================== */
+section#etc{min-width: 1400px; width: 100%; overflow: hidden; background: #f9f9f9; padding: 100px 0; background: #eee;}
+section#etc .etc_main{min-width: 1400px; width: 1400px; height: 400px; margin: 0 auto; overflow: hidden; padding-top: 60px;}
+section#etc .etc_main dl{width: 19.2%; margin-right: 1%; position: relative;}
+section#etc .etc_main dl:last-child{margin-right: 0;}
+section#etc .etc_main dl dt{position: relative; width: 270px; height: 270px; overflow: hidden;}
+section#etc .etc_main dl dt p{width: 100%; height: 100%; transition: .5s;}
+section#etc .etc_main dl dt p::before{content: ''; position: absolute; top: 0; left: 0; width: 0; height: 100%; background: rgba(28, 28, 28, 0.6);z-index: 99; transition: .6s;}
+section#etc .etc_main dl dt:hover p::before{width: 100%;}
+section#etc .etc_main dl dt:hover p strong{opacity: 1;  cursor: pointer;}
+section#etc .etc_main dl dt p strong{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px 20px; background: linear-gradient(to left, #23569c, #3987f7); color: #fff; border: 3px double #fff; border-radius: 50px; transition: 0.8s; z-index: 100; opacity: 0;}
+
+section#etc .etc_main dl.etc_1 dt i,
+section#etc .etc_main dl.etc_2 dt i,
+section#etc .etc_main dl.etc_3 dt i,
+section#etc .etc_main dl.etc_4 dt i,
+section#etc .etc_main dl.etc_5 dt i{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: 100%; background-repeat: no-repeat;}
+section#etc .etc_main dl.etc_1 dt i{background: url("../images/thum1.png") center/cover;}
+section#etc .etc_main dl.etc_2 dt i{background: url("../images/thum2.png") center/cover;}
+section#etc .etc_main dl.etc_3 dt i{background: url("../images/thum3.png") center/cover;}
+section#etc .etc_main dl.etc_4 dt i{background: url("../images/thum4.png") center/cover;}
+section#etc .etc_main dl.etc_5 dt i{background: url("../images/thum5.png") center/cover;}
+
+section#etc .etc_main dl dd{padding: 20px 0; resize: 14px; line-height: 1.7; text-align: center; font-size: 13px;}
+section#etc .etc_main dl dd span{font-weight: bold; font-size: 18px;}
+
+/* 하단화살표 */
+.btn_top{position: fixed; right: 2%; bottom: 7%; width: 50px; height: 50px;cursor: pointer; display: none; z-index: 99;}
+
+
+/* footer ==================================================== */
+#wrap footer{width: 100%;}
+#wrap footer .footer_main{width: 1400px; margin: 0 auto;}
+#wrap footer .footer_main ul.sns{width: 1400px; margin: 0 auto; overflow: hidden; margin-top: 20px;}
+#wrap footer .footer_main ul.sns li{margin-right: 20px;}
+#wrap footer .footer_main ul.sns li:last-child{margin-right: 0;}
+#wrap footer .footer_main ul.sns li a{color: #444;}
+#wrap footer .footer_main ul.sns li a i{font-size: 25px;}
+#wrap footer .footer_main .copy{width: 100%; padding: 10px 0 41px 0;}
+#wrap footer .footer_main .copy p{font-size: 14px;}
+
+
+
+/* popup - box slide ==================================================== */
+
+/* popup all */
+#wrap #popup{width: 100%; margin: 0 auto;}
+#wrap #popup .popup_main{width: 100%; margin: 0 auto;}
+#wrap #popup .popup_main .bg{position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 999998; display: none;}
+#wrap #popup .popup_main .bg p.close{position: fixed; bottom: 5%; left: 50%; transform: translateX(-50%); color: #f0f0f0; font-size: 17px; font-weight: 100; z-index: 9999999999;}
+
+.popup{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 600px; overflow: hidden; z-index: 999999; display: none;}
+.popup button.prev, .next{position: absolute; top: 50%; transform: translateY(-50%); width: 70px; height: 100px; font-size: 70px; font-weight: 100; padding-bottom: 13px; outline: 0; border: 0; background: #333; color: #fff; opacity: 0.5; cursor: pointer; font-family: 'RalewayT';}
+.popup button.prev:hover, .next:hover{opacity: 0.7;}
+.popup button.prev{left: 0; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+.popup button.next{right: 0; border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+
+/* popup-1 */
+#popup1 ul.popList{width: 2400px; height: 738px;}
+#popup1 ul.popList li.popImg img{width: 800px; height: 600px;}
+
+/* popup-2 */
+#popup2 ul.popList{width: 2400px; height: 738px;}
+#popup2 ul.popList li.popImg img{width: 800px; height: 600px;}
+
+/* popup-3 */
+#popup3 ul.popList{width: 2400px; height: 738px;}
+#popup3 ul.popList li.popImg img{width: 800px; height: 600px;}
+
+/* popup-4 */
+#popup4 ul.popList{width: 4000px; height: 738px;}
+#popup4 ul.popList li.popImg img{width: 800px; height: 600px;}
+
+/* popup-5 */
+#popup5 ul.popList{width: 5600px; height: 738px;}
+#popup5 ul.popList li.popImg img{width: 800px; height: 600px;}
