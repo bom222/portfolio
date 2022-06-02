@@ -21,8 +21,8 @@ $(function () {
       $(".hansol dt").removeClass("animate__animated animate__fadeInLeft");
       $(".hansol dt").addClass("animate__animated animate__fadeInLeft");
     } else if (height >= 4181 && height <= 4550) {
-      $(".Clova dt").removeClass("animate__animated animate__fadeInUpBig");
-      $(".Clova dt").addClass("animate__animated animate__fadeInUpBig");
+      $(".Clova dt").removeClass("animate__animated animate__fadeInRight");
+      $(".Clova dt").addClass("animate__animated animate__fadeInRight");
     } else if (height >= 4551 && height <= 5700) {
       $(".OnD dt").removeClass("animate__animated animate__fadeInUpBig");
       $(".OnD dt").addClass("animate__animated animate__fadeInUpBig");
