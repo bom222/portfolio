@@ -11,12 +11,8 @@ $(function () {
       $(".line dt").removeClass("animate__animated animate__rotateInDownLeft");
       $(".line dt").addClass("animate__animated animate__rotateInDownLeft");
     } else if (height >= 2701 && height <= 3330) {
-      $(".boxResponsive dt").removeClass(
-        "animate__animated animate__rotateInDownRight"
-      );
-      $(".boxResponsive dt").addClass(
-        "animate__animated animate__rotateInDownRight"
-      );
+      $(".boxResponsive dt").removeClass("animate__animated animate__rotateInDownRight");
+      $(".boxResponsive dt").addClass("animate__animated animate__rotateInDownRight");
     } else if (height >= 3331 && height <= 4180) {
       $(".hansol dt").removeClass("animate__animated animate__fadeInLeft");
       $(".hansol dt").addClass("animate__animated animate__fadeInLeft");
