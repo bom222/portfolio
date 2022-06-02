@@ -17,10 +17,13 @@ $(function () {
       $(".boxResponsive dt").addClass(
         "animate__animated animate__rotateInDownRight"
       );
-    } else if (height >= 3331 && height <= 4080) {
+    } else if (height >= 3331 && height <= 4180) {
       $(".hansol dt").removeClass("animate__animated animate__fadeInLeft");
       $(".hansol dt").addClass("animate__animated animate__fadeInLeft");
-    } else if (height >= 4081 && height <= 4750) {
+    } else if (height >= 4181 && height <= 4550) {
+      $(".Clova dt").removeClass("animate__animated animate__fadeInUpBig");
+      $(".Clova dt").addClass("animate__animated animate__fadeInUpBig");
+    } else if (height >= 4551 && height <= 5700) {
       $(".OnD dt").removeClass("animate__animated animate__fadeInUpBig");
       $(".OnD dt").addClass("animate__animated animate__fadeInUpBig");
     }
