@@ -45,14 +45,25 @@ section#profile{width: 100%; padding-top: 100px;}
 section#profile .profile_main{width: 1300px; margin: 0 auto; padding: 130px 0; overflow: hidden;}
 /* left */
 section#profile .profile_main .p_left{width: 500px; padding: 30px 0 0 30px;}
-section#profile .profile_main .p_left .img{width: 400px; height: 400px; background-repeat: 50%; overflow: hidden; background: #23569c; position: relative; border: 0;border-radius: 50%; animation-name: my_pic; animation-duration: .5s; animation-iteration-count: 1; animation-timing-function: linear; animation-fill-mode: forwards;}
-section#profile .profile_main .p_left .img::after{content: ''; display: block; width: 400px; height: 400px;  background: url("../images/me.png") no-repeat 50px 0px; background-size: 300px; position: absolute; bottom: -10px; left: 0;}
+section#profile .profile_main .p_left .img{width: 400px; height: 400px; background-repeat: 50%; overflow: hidden; background: #23569c; position: relative; border: 0;border-radius: 50%; 
+  animation-name: my_pic; animation-duration: 1s; animation-iteration-count: 1; animation-timing-function: cubic-bezier(0.29, 0.03, 0.02, 0.96); animation-fill-mode: forwards;}
+section#profile .profile_main .p_left .img::after{content: ''; display: block; position: absolute; width: 400px; height: 400px;  background: url("../images/me.png") no-repeat 50px 0px; background-size: 300px; position: absolute; bottom: -10px; left: 0; 
+  animation-name: my_pic_a; animation-duration: 1s; animation-iteration-count: 1; animation-timing-function: linear; animation-fill-mode: forwards;}
 @keyframes my_pic{
   from{
     margin-left: -500px;
   }
   to{
     margin-left: 0;
+  }
+}
+@keyframes my_pic_a{
+  from{
+    margin: 0;
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }
 
@@ -96,6 +107,7 @@ section#portfolio {min-width: 1400px; width: 100%; position: relative; backgroun
 section#portfolio .portfolio_main{ width: 1400px; margin: 0 auto; padding: 30px 0;}
 section#portfolio .portfolio_main dl dt{width: 700px; height: 620px;}
 section#portfolio .portfolio_main dl:nth-child(6):after {content: ""; display: block; clear: both;}
+
 
 
 .odd dd h4{font-size: 15px; margin-bottom: 10px;}
